@@ -13,8 +13,8 @@ def DividirDosNumeros(dividendo, divisor):
     parte_entera = None
     resto = None
     #Tu código aca:
-    resto = dividendo%divisor
-    parte_entera = dividendo//divisor
+    resto = dividendo % divisor
+    parte_entera = dividendo // divisor
     return parte_entera, resto
 
 def ProximoPrimo(actual_primo):
@@ -28,24 +28,7 @@ def ProximoPrimo(actual_primo):
         ProximoPrimo(8) debe retornar nulo
     '''
     #Tu código aca:
-    def primo(n):
-        primo = True
-        for i in range(2,n):
-            if (n%i==0):
-                primo = False
-                break
-        return primo
-
-    if type(actual_primo)!=int :
-        return None
-    elif primo(actual_primo)==False:
-        return None
-    else:
-        siguiente_primo = actual_primo+1
-        while(primo(siguiente_primo)==False):
-            siguiente_primo+=1
-
-    return siguiente_primo
+    return 'Funcion incompleta'
 
 def ClaseAnimal(especie, color):
     '''
@@ -66,16 +49,6 @@ def ClaseAnimal(especie, color):
         a.CumpliAnios() -> debe devolver 3
     '''
     #Tu código aca:
-    class Animal:
-        def __init__(self,especie,color):
-            self.color = color
-            self.especie = especie
-            self.edad = 0
-        
-        def CumplirAnios(self):
-            self.edad += 1 #self.edad = self.edad + 1
-            return self.edad
-        
-    return Animal(especie, color)
+    return 'Funcion incompleta'
 
 
